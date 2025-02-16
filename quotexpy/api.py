@@ -267,6 +267,7 @@ class QuotexAPI(object):
         self.websocket_thread = threading.Thread(
             target=self.websocket.run_forever,
             kwargs={
+                "suppress_origin": True,
                 "ping_interval": 25000,
                 "ping_timeout": 5000,
                 "ping_payload": "2",

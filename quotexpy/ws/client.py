@@ -38,7 +38,6 @@ class WebsocketClient(object):
             "Host": "ws2.qxbroker.com",
             "Origin": "https://qxbroker.com",
             "Pragma": "no-cache",
-            "Sec-WebSocket-Extensions": "permessage-deflate; client_max_window_bits",
             "Sec-WebSocket-Version": "13",
             "Upgrade": "websocket",
             "Sec-WebSocket-Key": self.generate_websocket_key(),
